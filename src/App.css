@@ -1,0 +1,43 @@
+:root {
+  --green-color: #25d060;
+  --blue-color: #2a6fc9;
+  --red-color: #e50914;
+  --main-dark: #18191a;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--main-dark);
+  -webkit-font-smoothing: antialiased;
+  color: #fff;
+  overflow: hidden;
+}
+
+body,
+input,
+button {
+  font-family: "Montserrat", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Montserrat;
+  text-align: center;
+}
+
+.main {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
