@@ -4,25 +4,28 @@ import "./App.css";
 import colors from "./utils/colors";
 import Screen from "./components/Screen";
 
-import ursinho_pandinha_ok from "./assets/ursinho_pandinha_ok.gif";
-import ursinho_estudando from "./assets/ursinho_estudando.gif";
-import pandinha_brava from "./assets/pandinha_fofa_cara_de_brava.gif";
-import pandinha from "./assets/pandinha.gif";
-import ursinho_S2_pandinha from "./assets/ursinho_S2_pandinha.gif";
-import ursinha_chorando from "./assets/ursinha_chorando.gif";
-import ursinho_chorando from "./assets/ursinho_chorando.gif";
-import pandinha_martelo from "./assets/pandinha_martelo.png";
-import ursinho_catucando_pandinha from "./assets/ursinho_catucando_pandinha.gif";
-import ursinho_coracao from "./assets/ursinho_coracao.jpg";
-import pandinha_coracao from "./assets/pandinha_coracao.gif";
-import ursinhos_apaixonados from "./assets/ursinhos_apaixonados.gif";
-import ursinhos_caminhada from "./assets/ursinhos_caminhada.jpg";
-import ursinhos_fotinha from "./assets/ursinhos_fotinha.jpg";
-import ursinhos_bebida from "./assets/ursinhos_bebida.gif";
-import ursinha_mordidas from "./assets/ursinha_mordidas.gif";
-import ursinho_pegando_no_sono from "./assets/ursinho_pegando_no_sono.gif";
-import ursinhos_dormindo from "./assets/ursinhos_dormindo.gif";
+import chilling from "./assets/chilling.gif";
+import chilling_2 from "./assets/chilling_2.gif";
+import fun_2 from "./assets/fun_2.jpg";
+import he_care from "./assets/he_care.gif";
+import hug_phone from "./assets/hug_phone.gif";
+import love_2 from "./assets/love_2.gif";
+import love_meet from "./assets/love_meet.gif";
+import okay from "./assets/okay.gif";
+import she_care from "./assets/she_care.gif";
+import she_cry from "./assets/she_cry.gif";
+import she_happy from "./assets/she_happy.gif";
+import she_kiss from "./assets/she_kiss.webp";
+import she_mad from "./assets/she_mad.gif";
+import they_hug from "./assets/they_hug.gif";
+import read_book from "./assets/read_book.gif";
+import she_sleeping from "./assets/she_sleeping.gif";
+import ice_cream from "./assets/ice_cream.gif";
+import they_hug2 from "./assets/they_hug2.gif";
+
 import kiss from "./assets/kiss.jpeg";
+
+
 import backgroundSong from "./assets/Someone Like You.mp3"
 import AudioPlayer from 'react-h5-audio-player';
 import 'react-h5-audio-player/lib/styles.css';
@@ -33,18 +36,18 @@ const App = () => {
 
   return (
     <div className="app-container">
-
+      <AudioPlayer style={{
+        width: '300px', height: '100px'
+      }}
+        autoPlay
+        src={backgroundSong}
+        onPlay={e => console.log("onPlay")}
+      // other props here
+      />
       <div className="main">
-        <AudioPlayer style={{
-          width: '300px'
-        }}
-          autoPlay
-          src={backgroundSong}
-          onPlay={e => console.log("onPlay")}
-        // other props here
-        />
+
         <Screen
-          imageUrl={ursinho_pandinha_ok}
+          imageUrl={okay}
           bgColor={colors.red}
           textColor={colors.white}
           bigTitle="Unexpected Encounters"
@@ -54,7 +57,7 @@ const App = () => {
           sequency="1"
         />
         <Screen
-          imageUrl={ursinho_estudando}
+          imageUrl={fun_2}
           bgColor={colors.blue}
           textColor={colors.white}
           bigTitle="From Mischievous Beginnings"
@@ -64,7 +67,7 @@ const App = () => {
           sequency="2"
         />
         <Screen
-          imageUrl={pandinha}
+          imageUrl={love_meet}
           bgColor={colors.pink}
           textColor={colors.white}
           bigTitle="Unexpected Connections"
@@ -74,7 +77,7 @@ const App = () => {
           sequency="3"
         />
         <Screen
-          imageUrl={ursinho_S2_pandinha}
+          imageUrl={chilling_2}
           bgColor={colors.red}
           textColor={colors.white}
           bigTitle="Laughter in the Little Things"
@@ -84,7 +87,7 @@ const App = () => {
           sequency="4"
         />
         <Screen
-          imageUrl={ursinha_chorando}
+          imageUrl={chilling}
           bgColor={colors.purple}
           textColor={colors.white}
           bigTitle="Moments of Revelation"
@@ -94,7 +97,7 @@ const App = () => {
           sequency="5"
         />
         <Screen
-          imageUrl={ursinho_chorando}
+          imageUrl={read_book}
           bgColor={colors.green}
           textColor={colors.white}
           bigTitle="A Gentle Awakening"
@@ -104,7 +107,7 @@ const App = () => {
           sequency="6"
         />
         <Screen
-          imageUrl={pandinha_martelo}
+          imageUrl={she_sleeping}
           bgColor={colors.blue}
           textColor={colors.white}
           bigTitle="The Beauty of Innocence"
@@ -114,7 +117,7 @@ const App = () => {
           sequency="7"
         />
         <Screen
-          imageUrl={pandinha_brava}
+          imageUrl={ice_cream}
           bgColor={colors.yellow}
           textColor={colors.white}
           bigTitle="Sweet Gestures"
@@ -124,7 +127,7 @@ const App = () => {
           sequency="8"
         />
         <Screen
-          imageUrl={ursinho_catucando_pandinha}
+          imageUrl={they_hug2}
           bgColor={colors.purple}
           textColor={colors.white}
           bigTitle="A Date to Remember"
@@ -134,7 +137,7 @@ const App = () => {
           sequency="9"
         />
         <Screen
-          imageUrl={ursinho_coracao}
+          imageUrl={she_cry}
           bgColor={colors.blue}
           textColor={colors.white}
           bigTitle="The Pain of Separation"
@@ -144,7 +147,7 @@ const App = () => {
           sequency="10"
         />
         <Screen
-          imageUrl={pandinha_coracao}
+          imageUrl={she_care}
           bgColor={colors.yellow}
           textColor={colors.white}
           bigTitle="Unwavering Support"
@@ -154,7 +157,7 @@ const App = () => {
           sequency="11"
         />
         <Screen
-          imageUrl={ursinhos_apaixonados}
+          imageUrl={he_care}
           bgColor={colors.red}
           textColor={colors.white}
           bigTitle="My First Option"
@@ -164,7 +167,7 @@ const App = () => {
           sequency="12"
         />
         <Screen
-          imageUrl={ursinhos_caminhada}
+          imageUrl={she_happy}
           bgColor={colors.pink}
           textColor={colors.white}
           bigTitle="Compassion and Care"
@@ -174,7 +177,7 @@ const App = () => {
           sequency="13"
         />
         <Screen
-          imageUrl={ursinhos_fotinha}
+          imageUrl={they_hug}
           bgColor={colors.green}
           textColor={colors.white}
           bigTitle="A Future Bright"
@@ -184,7 +187,7 @@ const App = () => {
           sequency="14"
         />
         <Screen
-          imageUrl={ursinhos_bebida}
+          imageUrl={she_mad}
           bgColor={colors.purple}
           textColor={colors.white}
           bigTitle="Handling Jealousy with Grace"
@@ -194,7 +197,7 @@ const App = () => {
           sequency="15"
         />
         <Screen
-          imageUrl={ursinha_mordidas}
+          imageUrl={fun_2}
           bgColor={colors.blue}
           textColor={colors.white}
           bigTitle="Going the Extra Mile"
@@ -204,7 +207,7 @@ const App = () => {
           sequency="16"
         />
         <Screen
-          imageUrl={ursinho_pegando_no_sono}
+          imageUrl={hug_phone}
           bgColor={colors.purple}
           textColor={colors.white}
           bigTitle="Planning Our Next Adventure"
@@ -214,7 +217,7 @@ const App = () => {
           sequency="17"
         />
         <Screen
-          imageUrl={ursinhos_dormindo}
+          imageUrl={she_kiss}
           bgColor={colors.blue}
           textColor={colors.white}
           bigTitle="Messages of Love"
@@ -224,7 +227,7 @@ const App = () => {
           sequency="18"
         />
         <Screen
-          imageUrl={pandinha}
+          imageUrl={love_2}
           bgColor={colors.green}
           textColor={colors.white}
           bigTitle="Strength in Distance"
