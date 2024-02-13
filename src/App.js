@@ -224,8 +224,8 @@ const App = () => {
           sequency="18"
         />
         <Screen
-          imageUrl={kiss}
-          bgColor={colors.red}
+          imageUrl={pandinha}
+          bgColor={colors.green}
           textColor={colors.white}
           bigTitle="Strength in Distance"
           title="Love Across the Miles"
@@ -233,16 +233,7 @@ const App = () => {
           btnNext="Next"
           sequency="19"
         />
-        <Screen
-          imageUrl={kiss}
-          bgColor={colors.red}
-          textColor={colors.white}
-          bigTitle="Strength in Distance"
-          title="Love Across the Miles"
-          text="Miles apart, yet our hearts beat as one, Liza. Through the vast expanse of distance, our love remains steadfast, a beacon of hope guiding us through the darkness, reminding us that no matter how far apart we may be, our love knows no bounds."
-          btnNext="Next"
-          sequency="20"
-        />
+
         <Screen
           imageUrl={kiss}
           bgColor={colors.red}
@@ -251,7 +242,7 @@ const App = () => {
           title="Dreaming of Our Reunion"
           text="As I lay my head down to sleep each night, my dreams are filled with visions of you, Liza. And in those moments, I find solace, knowing that soon, very soon, I'll hold you in my arms once more, our love stronger than ever before."
           btnNext="End"
-          sequency="21"
+          sequency="20"
         />
       </div>
     </div>
