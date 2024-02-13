@@ -37,11 +37,12 @@ const App = () => {
   return (
     <div className="app-container">
       <AudioPlayer style={{
-        width: '300px', height: '100px'
       }}
         autoPlay
         src={backgroundSong}
         onPlay={e => console.log("onPlay")}
+        showJumpControls={false}
+        layout={'horizontal'}
       // other props here
       />
       <div className="main">
