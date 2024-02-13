@@ -18,6 +18,8 @@ const Screen = (props) => {
           <p>{props.text}</p>
         </div>
         <footer>
+
+
           {props.sequency > 1 && (
             <Link
               activeClass="active"
@@ -33,13 +35,16 @@ const Screen = (props) => {
           )}
           <Link
             activeClass="active"
-            to={Number(props.sequency) + 1}
+            to={props.sequency === "20" ? 1 : Number(props.sequency) + 1}
             spy={true}
             smooth={true}
             offset={0}
             duration={1200}
             ignoreCancelEvents={true}
-          >{props.btnNext}</Link>
+          >
+            {props.btnNext}
+          </Link>
+
 
 
         </footer>

@@ -2,7 +2,10 @@
   --green-color: #25d060;
   --blue-color: #2a6fc9;
   --red-color: #e50914;
+  --purple-color: #e50914;
   --main-dark: #18191a;
+  --dark-blue: #8399a8;
+  --tuscany-color: #bf9d9d;
 }
 
 * {
@@ -12,7 +15,7 @@
 }
 
 body {
-  background: var(--main-dark);
+  background: var(--tuscany-color);
   -webkit-font-smoothing: antialiased;
   color: #fff;
   overflow: hidden;
@@ -40,4 +43,21 @@ h6 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.login-container {
+  background: #dbc09e;
+  padding: 30px;
+  border-radius: 15px;
+}
+img {
+  border-radius: 15px;
+}
+
+.login-container input,
+.login-container button {
+  margin: 3px;
+  padding: 5px;
+  border-radius: 10px;
+  border: 0;
 }
