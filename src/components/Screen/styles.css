@@ -97,7 +97,12 @@ html:hover {
   bottom: 0;
   left: 0;
 }
-
+.rhap_controls-section button:hover,
+.rhap_progress-container:hover,
+.rhap_volume-bar-area:hover,
+.rhap_volume-indicator {
+  cursor: none !important;
+}
 .custom-cursor {
   position: fixed;
   width: 32px; /* Adjust size as needed */

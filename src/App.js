@@ -51,6 +51,7 @@ const App = () => {
         onPlay={e => console.log("onPlay")}
         showJumpControls={false}
         layout={'horizontal'}
+        loop={true}
       // other props here
       />
       <div className="main">
