@@ -8,7 +8,7 @@ const Login = ({ onLogin }) => {
     const handleSubmit = (e) => {
         e.preventDefault();
         // Replace "your_password" with your actual password
-        if (password === "2004") {
+        if (password === "08072000") {
             onLogin();
         } else {
             setError("Incorrect password. Fuck you!");
