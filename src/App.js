@@ -4,6 +4,7 @@ import "./App.css";
 import colors from "./utils/colors";
 import Screen from "./components/Screen/index";
 import Login from "./components/Screen/login.js";
+import CustomCursor from "./components/Screen/CustomCursor.js";
 
 import chilling from "./assets/chilling.gif";
 import chilling_2 from "./assets/chilling_2.gif";
@@ -42,6 +43,7 @@ const App = () => {
 
   return (
     <div className="app-container">
+      <CustomCursor />
       <AudioPlayer style={{
       }}
         autoPlay={true}

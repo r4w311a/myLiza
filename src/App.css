@@ -13,7 +13,10 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+html,
+html:hover {
+  cursor: none;
+}
 body {
   background: var(--tuscany-color);
   -webkit-font-smoothing: antialiased;
@@ -25,6 +28,7 @@ body,
 input,
 button {
   font-family: "Montserrat", sans-serif;
+  cursor: none;
 }
 
 h1,

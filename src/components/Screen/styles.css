@@ -1,3 +1,7 @@
+html,
+html:hover {
+  cursor: none;
+}
 .screen-full {
   width: 100%;
   height: 100vh;
@@ -76,7 +80,7 @@
 }
 
 .screen-full a:hover {
-  cursor: pointer;
+  cursor: none;
   filter: brightness(1.2);
   box-shadow: 6px 8px 12px rgba(0, 0, 0, 0.25);
 }
@@ -92,4 +96,14 @@
   position: fixed;
   bottom: 0;
   left: 0;
+}
+
+.custom-cursor {
+  position: fixed;
+  width: 32px; /* Adjust size as needed */
+  height: 32px; /* Adjust size as needed */
+  background-image: url("../../assets/cursor-test.png"); /* Replace with your cursor image */
+  background-size: cover;
+  pointer-events: none; /* Allow cursor to pass through */
+  z-index: 9999; /* Ensure cursor is above other content */
 }
