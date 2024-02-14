@@ -107,3 +107,9 @@ html:hover {
   pointer-events: none; /* Allow cursor to pass through */
   z-index: 9999; /* Ensure cursor is above other content */
 }
+
+@media only screen and (max-width: 768px) {
+  .custom-cursor {
+    display: none; /* Hide cursor on smaller screens */
+  }
+}
